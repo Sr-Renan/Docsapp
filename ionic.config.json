@@ -1,0 +1,7 @@
+{
+  "name": "ETECdocs",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

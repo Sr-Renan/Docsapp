@@ -1,0 +1,52 @@
+<ion-header hidden>
+  <ion-navbar>
+    <ion-title>
+      [Projeto ETECdocs]
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item text-center no-lines>
+
+    <ion-icon name="logo-rss" class="logo" color="light" ></ion-icon>
+
+  </ion-item>
+
+
+  <ion-item text-center no-lines>
+  
+  <h1>[Projeto ETECdocs]</h1>
+
+  </ion-item>
+
+  <ion-grid style="width: 75%;">
+
+
+
+<!-- Criando um input para receber E-mail pagina Registro-->
+    <ion-row class="rowStyle">
+      <ion-icon name="mail" color="black"></ion-icon>
+      <ion-input type="email" placeholder="Seu E-mail" [(ngModel)]="email"></ion-input>
+    </ion-row>
+
+<!-- Criando um input para receber Senha de Registro-->
+    <ion-row class="rowStyle">
+      <ion-icon name="lock" color="black"></ion-icon>
+      <ion-input type="password" placeholder="Sua senha" [(ngModel)]="password"></ion-input>
+    </ion-row>
+
+<!-- Criando um botão de Entrar da pagina Login-->
+    <ion-row>
+      <button ion-button block round outline color="secondary" style="margin-top: 20px;" (click)="GoLogin()">Entrar</button>
+    </ion-row>
+
+  </ion-grid>
+
+<!-- Criando um botão da pagina de login para a pagina de Registro-->
+<ion-grid style="width: 75%;">  
+  <button ion-button block round outline color="danger" style="margin-top: -5px;" (click)="GoPageSignup()">Inscrever-se</button>
+</ion-grid>
+
+
+</ion-content>
